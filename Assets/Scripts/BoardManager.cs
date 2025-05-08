@@ -9,6 +9,13 @@ public class BoardManager : MonoBehaviour
     public GameObject piecePrefab;
     private List<Box> _blackSquares = new List<Box>();
     private Piece _selectedPiece;
+    
+    [Header("Board Settings")]
+    public GameObject boxPrefab;
+    private string _customColor1 = "#594F4F";
+    private string _customColor2 = "#D6C7B1";
+    private Box[,] _grid = new Box[8, 8];
+    
 
     private void Awake()
     {
@@ -17,10 +24,44 @@ public class BoardManager : MonoBehaviour
 
     private void Start()
     {
+        GenerateBoard();
         FindBlackSquares();
         PlacePieces();
     }
-    
+
+    private void GenerateBoard()
+    {
+        for (int row = 0; row < 8; row++)
+        {
+            for (int col = 0; col < 8; col++)
+            {
+                Vector3 position = new Vector3(col - 4, row - 4, 0); // Adjust the position on the scene
+                GameObject boxObject = Instantiate(boxPrefab, position, Quaternion.identity, transform);
+                Box boxScript = boxObject.GetComponent<Box>();
+                boxScript.row = row;
+                boxScript.col = col;
+                
+                Color boxColor;
+
+                // Asignar color según la regla
+                SpriteRenderer renderer = boxObject.GetComponent<SpriteRenderer>();
+                if ((row + col) % 2 == 0)
+                {
+                    ColorUtility.TryParseHtmlString(_customColor1, out boxColor);
+                }
+                else
+                {
+                    ColorUtility.TryParseHtmlString(_customColor2, out boxColor);
+                }
+                
+                boxObject.GetComponent<SpriteRenderer>().color = boxColor;
+
+                _grid[row, col] = boxScript;
+                
+            }
+        }
+    }
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -147,19 +188,17 @@ public class BoardManager : MonoBehaviour
 
     private void FindBlackSquares()
     {
-        Box[] allBoxes = FindObjectsByType<Box>(FindObjectsInactive.Include, FindObjectsSortMode.None);
-
-        foreach (Box box in allBoxes)
+        _blackSquares.Clear(); // Clean the list before full it 
+        for (int row = 0; row < 8; row++)
         {
-            int row = box.row;
-            int col = box.col;
-
-            if ((row + col) % 2 == 0)
+            for (int col = 0; col < 8; col++)
             {
-                _blackSquares.Add(box);
+                if ((row + col) % 2 == 0)
+                {
+                    _blackSquares.Add(_grid[row, col]);
+                }
             }
         }
-
         _blackSquares.Sort((a, b) => a.row != b.row ? a.row.CompareTo(b.row) : a.col.CompareTo(b.col));
     }
 

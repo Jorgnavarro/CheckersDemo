@@ -7,6 +7,7 @@ public class Piece : MonoBehaviour
     public int col;
     public bool isKing = false;
     public bool isPlayer1;
+    public GameObject kingImage;
 
 
     public void Initialize(int _row, int _col, bool _isPlayer1, Color color)
@@ -167,11 +168,13 @@ public class Piece : MonoBehaviour
 
     private void CheckPromotion()
     {
-        if (!isKing && (row == 7 || row == 0)) // Última fila
+        if (!isKing) // Última fila
         {
-            isKing = true;
-            GetComponent<SpriteRenderer>().color = Color.yellow; // Indicador visual de promoción
-            Debug.Log("Piece promoted to King!");
+            if ((isPlayer1 && row == 7) || (!isPlayer1 && row == 0))
+            {
+                isKing = true;
+                kingImage.SetActive(true);
+            }
         }
 
     }

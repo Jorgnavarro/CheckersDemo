@@ -9,6 +9,7 @@ public class BoardManager : MonoBehaviour
     public GameObject piecePrefab;
     private List<Box> _blackSquares = new List<Box>();
     private Piece _selectedPiece;
+
     
     [Header("Board Settings")]
     public GameObject boxPrefab;
@@ -126,6 +127,8 @@ public class BoardManager : MonoBehaviour
 
         if (validMove)
         {
+            ClearHighlightedBoxes(); // 🔄 Limpiar imágenes de movimiento antes de actualizar la posición
+
            if (captured)
            {
                GameManager.Instance.AddScore(_selectedPiece.isPlayer1); //Add score to the current player
@@ -177,10 +180,14 @@ public class BoardManager : MonoBehaviour
         if ((GameManager.Instance.GetCurrentTurn() && clickedPiece.isPlayer1) || (!GameManager.Instance.GetCurrentTurn() && !clickedPiece.isPlayer1))
         {
             if (_selectedPiece != null)
+            {
+                ClearHighlightedBoxes();
                 _selectedPiece.GetComponent<SpriteRenderer>().color = _selectedPiece.isPlayer1 ? Color.black : Color.red;
+            }
 
             _selectedPiece = clickedPiece;
-            _selectedPiece.GetComponent<SpriteRenderer>().color = Color.green;
+            _selectedPiece.GetComponent<SpriteRenderer>().color = Color.yellow;
+            HighlightAvailableMoves(_selectedPiece);
         }
     }
 
@@ -226,5 +233,59 @@ public class BoardManager : MonoBehaviour
         Piece pieceScript = piece.GetComponent<Piece>();
         pieceScript.Initialize(box.row, box.col, _isPlayer1, color);
         board[box.row, box.col] = pieceScript;
+    }
+    
+    private void HighlightAvailableMoves(Piece piece)
+    {
+        ClearHighlightedBoxes(); // Limpiar cualquier resaltado anterior
+
+        List<Box> availableMoves = piece.GetAvailableMoves(board);
+
+        foreach (Box box in availableMoves)
+        {
+            if (_blackSquares.Contains(box)) // Solo activar si la casilla está en el área de juego
+            {
+                if (IsCaptureMove(piece, box)) // 🔄 Verificar si es un movimiento de captura
+                {
+                    box.ShowMoveIndicator(true, Color.red); // Resaltar en rojo si es captura
+                }
+                else
+                {
+                    box.ShowMoveIndicator(true, Color.yellow); // Resaltar en amarillo si es movimiento normal
+                }
+            }
+
+
+        }
+    }
+    
+    private bool IsCaptureMove(Piece piece, Box targetBox)
+    {
+        int deltaRow = targetBox.row - piece.row;
+        int deltaCol = targetBox.col - piece.col;
+
+        if (Mathf.Abs(deltaRow) == 2 && Mathf.Abs(deltaCol) == 2) // Movimiento de captura (salto de 2)
+        {
+            int midRow = piece.row + deltaRow / 2;
+            int midCol = piece.col + deltaCol / 2;
+
+            Piece midPiece = board[midRow, midCol];
+            return midPiece != null && midPiece.isPlayer1 != piece.isPlayer1; // Verificar si hay una pieza enemiga
+        }
+
+        return false;
+    }
+
+
+
+
+
+    private void ClearHighlightedBoxes()
+    {
+        foreach (Box box in _blackSquares) // Solo limpiar casillas negras
+        {
+            box.ShowMoveIndicator(false); // Desactivar la imagen de movimiento
+        }
+        
     }
 }

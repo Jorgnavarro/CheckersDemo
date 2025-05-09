@@ -128,7 +128,71 @@ public class Piece : MonoBehaviour
         }
         return null;
     }
+    
+    public List<Box> GetAvailableMoves(Piece[,] board)
+    {
+        List<Box> availableMoves = new List<Box>();
 
+        int[] rowDirections = isKing ? new int[] { -1, 1 } : new int[] { isPlayer1 ? 1 : -1 };
+        int[] colDirections = { -1, 1 };
+
+        foreach (int dRow in rowDirections)
+        {
+            foreach (int dCol in colDirections)
+            {
+                int targetRow = row + dRow;
+                int targetCol = col + dCol;
+
+                if (IsValidPosition(targetRow, targetCol) && board[targetRow, targetCol] == null)
+                {
+                    Box targetBox = FindBoxByGridPosition(targetRow, targetCol);
+                    if (targetBox != null)
+                    {
+                        availableMoves.Add(targetBox);
+                    }
+                }
+            }
+            
+            // 🔄 Movimientos de captura
+            int[] captureRowDirections = isKing ? new int[] { -2, 2 } : new int[] { isPlayer1 ? 2 : -2 };
+            int[] captureColDirections = { -2, 2 };
+
+            foreach (int captureRow in captureRowDirections)
+            {
+                foreach (int captureCol in captureColDirections)
+                {
+                    int targetRow = row + captureRow;
+                    int targetCol = col + captureCol;
+                    int midRow = row + captureRow / 2;
+                    int midCol = col + captureCol / 2;
+
+                    if (IsValidPosition(targetRow, targetCol) && board[targetRow, targetCol] == null)
+                    {
+                        Piece midPiece = board[midRow, midCol];
+                        if (midPiece != null && midPiece.isPlayer1 != this.isPlayer1)
+                        {
+                            Box targetBox = FindBoxByGridPosition(targetRow, targetCol);
+                            if (targetBox != null)
+                            {
+                                availableMoves.Add(targetBox);
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+            
+        }
+
+        return availableMoves;
+    }
+    private bool IsValidPosition(int row, int col)
+    {
+        return row >= 0 && row < 8 && col >= 0 && col < 8;
+    }
+    
     public bool HasAvailableCaptures(Piece[,] board)
     {
         int[] rowDirections = isKing ? new int[] { -2, 2 } : new int[] { isPlayer1 ? 2 : -2 };

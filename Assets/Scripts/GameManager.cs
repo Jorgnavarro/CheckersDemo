@@ -68,24 +68,64 @@ public class GameManager : MonoBehaviour
         {
             if (piece.gameObject.activeSelf)
             {
-                if(piece.isPlayer1)
+                if (piece.isPlayer1)
                     player1Pieces++;
                 else
                     player2Pieces++;
             }
         }
-        
-        //Check if the player have not pieces
+
+        // Check if player 1 lose all the pieces
         if (player1Pieces == 0)
         {
             Debug.Log("Player 2 wins!");
             ShowWinMessage("Player 2 wins!");
         }
-        else if(player2Pieces == 0)
+        else if (player2Pieces == 0)
         {
             Debug.Log("Player 1 wins!");
             ShowWinMessage("Player 1 wins!");
         }
+        else
+        {
+            CheckPlayerBlocked(); // ✅ Check if the player don't have more movements available
+        }
+    }
+
+    private void CheckPlayerBlocked()
+    {
+        bool player1HasMoves = false;
+        bool player2HasMoves = false;
+
+        Piece[,] board = BoardManager.Instance.board; // 🔄 Access to the board array from the BoardManager
+
+        foreach (Piece piece in FindObjectsByType<Piece>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+        {
+            if (piece.gameObject.activeSelf)
+            {
+                if (piece.isPlayer1 && piece.GetAvailableMoves(board).Count > 0)
+                {
+                    player1HasMoves = true;
+                }
+                else if (!piece.isPlayer1 && piece.GetAvailableMoves(board).Count > 0)
+                {
+                    player2HasMoves = true;
+                }
+            }
+        }
+
+        // Check if the player is blocked
+        if (!player1HasMoves)
+        {
+            Debug.Log("Player 2 wins! (Player 1 is blocked)");
+            ShowWinMessage("Player 2 wins! (Player 1 is blocked)");
+        }
+        else if (!player2HasMoves)
+        {
+            Debug.Log("Player 1 wins! (Player 2 is blocked)");
+            ShowWinMessage("Player 1 wins! (Player 2 is blocked)");
+        }
+        
     }
 
     private void ShowWinMessage(string playerWins)

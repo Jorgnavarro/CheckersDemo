@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BoardManager : MonoBehaviour
 {
-  public static BoardManager Instance;
-    [SerializeField] Piece[,] board = new Piece[8, 8];
+    public static BoardManager Instance;
+    public Piece[,] board = new Piece[8, 8];
     public GameObject piecePrefab;
     private List<Box> _blackSquares = new List<Box>();
     private Piece _selectedPiece;
@@ -128,12 +128,12 @@ public class BoardManager : MonoBehaviour
         if (validMove)
         {
             ClearHighlightedBoxes(); // 🔄 Clean motion images before updating the position
+            
+            GameManager.Instance.CheckWinCondition(); //Check if anyone won
 
            if (captured)
            {
                GameManager.Instance.AddScore(_selectedPiece.isPlayer1); //Add score to the current player
-               GameManager.Instance.CheckWinCondition(); //Check if anyone won
-               
                if (_selectedPiece.HasAvailableCaptures(board))
                {
                    Debug.Log("You must continue capturing with the same piece.");

@@ -9,7 +9,8 @@ public class Piece : MonoBehaviour
     public bool isPlayer1;
     public GameObject kingImage;
 
-
+    
+    //Initializes the piece with its position, player and color.
     public void Initialize(int _row, int _col, bool _isPlayer1, Color color)
     {
         row = _row;
@@ -18,6 +19,7 @@ public class Piece : MonoBehaviour
         GetComponent<SpriteRenderer>().color = color;
     }
     
+    //Checks if a move is valid, including normal and capturing moves.
     public bool IsValidMove(int newRow, int newCol, Piece[,] board, out Piece capturedPiece)
     {
         capturedPiece = null;
@@ -54,11 +56,11 @@ public class Piece : MonoBehaviour
 
             if (midPiece != null && midPiece.isPlayer1 != this.isPlayer1)
             {
-                // 🔄 Restricción: Solo permitir capturas hacia adelante si la pieza no es rey
+                // 🔄 Restriction: Only allow forward captures if the piece is not a king
                 if (!isKing)
                 {
-                    if (isPlayer1 && deltaRow != 2) return false; // Jugador 1 solo captura hacia arriba
-                    if (!isPlayer1 && deltaRow != -2) return false; // Jugador 2 solo captura hacia abajo
+                    if (isPlayer1 && deltaRow != 2) return false; // Player 1 only captures upwards
+                    if (!isPlayer1 && deltaRow != -2) return false; // Player 2 only captures downwards
                 }
                 capturedPiece = midPiece;
                 return true;
@@ -67,8 +69,7 @@ public class Piece : MonoBehaviour
         return false;
     }
     
-    
-
+    //Move the piece to the new position and handle captures if necessary.
     public bool MovePiece(int newRow, int newCol, Piece [,] board, out bool madeCapture)
     {
         if (!IsValidMove(newRow, newCol, board, out Piece captured))
@@ -129,6 +130,7 @@ public class Piece : MonoBehaviour
         return null;
     }
     
+    //Gets the available boxes to move the piece, including normal and capturing moves.
     public List<Box> GetAvailableMoves(Piece[,] board)
     {
         List<Box> availableMoves = new List<Box>();
@@ -153,7 +155,7 @@ public class Piece : MonoBehaviour
                 }
             }
             
-            // 🔄 Movimientos de captura
+            // 🔄 capture movements 
             int[] captureRowDirections = isKing ? new int[] { -2, 2 } : new int[] { isPlayer1 ? 2 : -2 };
             int[] captureColDirections = { -2, 2 };
 
@@ -180,19 +182,17 @@ public class Piece : MonoBehaviour
                     }
                 }
             }
-
-
-
-            
         }
 
         return availableMoves;
     }
+    //Check if the position is inside to the board
     private bool IsValidPosition(int row, int col)
     {
         return row >= 0 && row < 8 && col >= 0 && col < 8;
     }
     
+    //Check if the piece has available captures
     public bool HasAvailableCaptures(Piece[,] board)
     {
         int[] rowDirections = isKing ? new int[] { -2, 2 } : new int[] { isPlayer1 ? 2 : -2 };
@@ -215,13 +215,16 @@ public class Piece : MonoBehaviour
                 int midCol = col + dCol / 2;
                 
                 Piece midPiece = board[midRow, midCol];
+                //We check if the enemy piece is in the target box
+                //Check that the piece is different to the piece of the current player
+                //Check if exists and available box after the enemy piece for make the capture
                 if (midPiece != null && midPiece.isPlayer1 != this.isPlayer1 && board[targetRow, targetCol] == null )
                 {
-                    // 🔄 Restricción: Solo permitir capturas hacia adelante si la pieza no es rey
+                    // 🔄 Restriction: Only allow forward captures if the piece is not a king
                     if (!isKing)
                     {
-                        if (isPlayer1 && dRow != 2) continue; // Jugador 1 solo captura hacia arriba
-                        if (!isPlayer1 && dRow != -2) continue; // Jugador 2 solo captura hacia abajo
+                        if (isPlayer1 && dRow != 2) continue; // Player 1 only captures upwards
+                        if (!isPlayer1 && dRow != -2) continue; // Player 2 only captures downwards
                     }
                     return true;
                 }
@@ -230,16 +233,16 @@ public class Piece : MonoBehaviour
         return false;
     }
 
+    //Checks if the piece has reached the last row and turns it into a King.
     private void CheckPromotion()
     {
-        if (!isKing) // Última fila
+        if (!isKing)
         {
-            if ((isPlayer1 && row == 7) || (!isPlayer1 && row == 0))
+            if ((isPlayer1 && row == 7) || (!isPlayer1 && row == 0)) // Check the last row for each player
             {
                 isKing = true;
                 kingImage.SetActive(true);
             }
         }
-
     }
 }

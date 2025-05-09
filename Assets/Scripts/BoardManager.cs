@@ -30,6 +30,7 @@ public class BoardManager : MonoBehaviour
         PlacePieces();
     }
 
+    //Generate the board by instantiating the boxes and assigning custom colors.
     private void GenerateBoard()
     {
         for (int row = 0; row < 8; row++)
@@ -44,7 +45,7 @@ public class BoardManager : MonoBehaviour
                 
                 Color boxColor;
 
-                // Asignar color según la regla
+                //Assign custom colors to the boxes
                 SpriteRenderer renderer = boxObject.GetComponent<SpriteRenderer>();
                 if ((row + col) % 2 == 0)
                 {
@@ -112,7 +113,6 @@ public class BoardManager : MonoBehaviour
 
     //Attempt to move the piece with MovePiece()
     //If the move is valid, change the piece´s color, deselect, and change the turn
-    
     private void HandleMove(Box clickedBox)
     {
         if (_selectedPiece.row == clickedBox.row && _selectedPiece.col == clickedBox.col)
@@ -127,12 +127,12 @@ public class BoardManager : MonoBehaviour
 
         if (validMove)
         {
-            ClearHighlightedBoxes(); // 🔄 Limpiar imágenes de movimiento antes de actualizar la posición
+            ClearHighlightedBoxes(); // 🔄 Clean motion images before updating the position
 
            if (captured)
            {
                GameManager.Instance.AddScore(_selectedPiece.isPlayer1); //Add score to the current player
-               GameManager.Instance.CheckWinCondition(); 
+               GameManager.Instance.CheckWinCondition(); //Check if anyone won
                
                if (_selectedPiece.HasAvailableCaptures(board))
                {
@@ -142,7 +142,7 @@ public class BoardManager : MonoBehaviour
                }
            }
            
-            // Fin del turno
+            // End of turn
             _selectedPiece.GetComponent<SpriteRenderer>().color = _selectedPiece.isPlayer1 ? Color.black : Color.red;
             _selectedPiece = null;
             GameManager.Instance.ChangeTurn(); // 🔄 Switch turn
@@ -150,6 +150,7 @@ public class BoardManager : MonoBehaviour
 
     }
 
+    //Wait a while before ending your turn if there are captures available and reset de color selection to the default one!
     private IEnumerator WaitAndEndTurn(Piece piece, float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -168,6 +169,7 @@ public class BoardManager : MonoBehaviour
     //Checks if the Piece belongs to the current player.
     //If a piece was selected, resets its color before switching to the new Piece
     //Marks the new Piece green.
+    //Highlights your available moves.
     private void HandlePieceSelection(Piece clickedPiece)
     {
 
@@ -190,9 +192,9 @@ public class BoardManager : MonoBehaviour
             HighlightAvailableMoves(_selectedPiece);
         }
     }
+    
 
-    //
-
+    //Find all the black boxes where the game will be played.
     private void FindBlackSquares()
     {
         _blackSquares.Clear(); // Clean the list before full it 
@@ -209,6 +211,7 @@ public class BoardManager : MonoBehaviour
         _blackSquares.Sort((a, b) => a.row != b.row ? a.row.CompareTo(b.row) : a.col.CompareTo(b.col));
     }
 
+    //Place the pieces in their initial positions.
     private void PlacePieces()
     {
         int downIndex = 0;
@@ -227,6 +230,7 @@ public class BoardManager : MonoBehaviour
         }
     }
 
+    //Instance the pieces and configure their position on the grid, before placing them.
     private void SpawnPiece(Box box, bool _isPlayer1, Color color)
     {
         GameObject piece = Instantiate(piecePrefab, box.transform.position, Quaternion.identity, transform);
@@ -235,56 +239,28 @@ public class BoardManager : MonoBehaviour
         board[box.row, box.col] = pieceScript;
     }
     
+    //Highlights the available boxes where the selected piece can move.
+    /// Activates the movement image on valid squares.
     private void HighlightAvailableMoves(Piece piece)
     {
-        ClearHighlightedBoxes(); // Limpiar cualquier resaltado anterior
+        ClearHighlightedBoxes(); // Clear any previous highlights
 
         List<Box> availableMoves = piece.GetAvailableMoves(board);
 
         foreach (Box box in availableMoves)
         {
-            if (_blackSquares.Contains(box)) // Solo activar si la casilla está en el área de juego
+            if (_blackSquares.Contains(box)) // Only activate if the box is in the play area
             {
-                if (IsCaptureMove(piece, box)) // 🔄 Verificar si es un movimiento de captura
-                {
-                    box.ShowMoveIndicator(true, Color.red); // Resaltar en rojo si es captura
-                }
-                else
-                {
-                    box.ShowMoveIndicator(true, Color.yellow); // Resaltar en amarillo si es movimiento normal
-                }
+                box.ShowMoveIndicator(true, Color.yellow);
             }
-
-
         }
     }
     
-    private bool IsCaptureMove(Piece piece, Box targetBox)
-    {
-        int deltaRow = targetBox.row - piece.row;
-        int deltaCol = targetBox.col - piece.col;
-
-        if (Mathf.Abs(deltaRow) == 2 && Mathf.Abs(deltaCol) == 2) // Movimiento de captura (salto de 2)
-        {
-            int midRow = piece.row + deltaRow / 2;
-            int midCol = piece.col + deltaCol / 2;
-
-            Piece midPiece = board[midRow, midCol];
-            return midPiece != null && midPiece.isPlayer1 != piece.isPlayer1; // Verificar si hay una pieza enemiga
-        }
-
-        return false;
-    }
-
-
-
-
-
     private void ClearHighlightedBoxes()
     {
-        foreach (Box box in _blackSquares) // Solo limpiar casillas negras
+        foreach (Box box in _blackSquares) // Just clean the black boxes
         {
-            box.ShowMoveIndicator(false); // Desactivar la imagen de movimiento
+            box.ShowMoveIndicator(false); // Deactivated the image indicator
         }
         
     }

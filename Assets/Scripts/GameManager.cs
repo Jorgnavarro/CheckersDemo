@@ -1,9 +1,14 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+
+    [Header("Win Panel settings")]
+    public GameObject winPanel;
+    public TextMeshProUGUI winText;
 
     public TextMeshProUGUI currentPlayer;
     public TextMeshProUGUI player1ScoreText;
@@ -22,6 +27,7 @@ public class GameManager : MonoBehaviour
     {
         UpdateTurnUI();
         UpdateScoreUI();
+        winPanel.SetActive(false);
     }
 
     public void ChangeTurn()
@@ -118,18 +124,29 @@ public class GameManager : MonoBehaviour
         if (!player1HasMoves)
         {
             Debug.Log("Player 2 wins! (Player 1 is blocked)");
-            ShowWinMessage("Player 2 wins! (Player 1 is blocked)");
+            ShowWinMessage("Player 2 wins!");
         }
         else if (!player2HasMoves)
         {
             Debug.Log("Player 1 wins! (Player 2 is blocked)");
-            ShowWinMessage("Player 1 wins! (Player 2 is blocked)");
+            ShowWinMessage("Player 1 wins!");
         }
         
     }
 
     private void ShowWinMessage(string playerWins)
     {
-        currentPlayer.text = playerWins;
+       winText.text = playerWins;
+       winPanel.SetActive(true);
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }

@@ -2,9 +2,16 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+public enum GameMode
+{
+    PlayerVsPlayer,
+    PlayerVsAI,
+}
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public GameMode currentGameMode = GameMode.PlayerVsAI; //Default game mode
 
     [Header("Win Panel settings")]
     public GameObject winPanel;
@@ -34,8 +41,12 @@ public class GameManager : MonoBehaviour
     {
         _isPlayer1Turn = !_isPlayer1Turn;
         UpdateTurnUI();
+        if (currentGameMode == GameMode.PlayerVsAI && !_isPlayer1Turn)
+        {
+            AIManager.Instance.AIMove();
+        }
     }
-
+    
     public void AddScore(bool isPlayer1)
     {
         if (isPlayer1)
@@ -94,7 +105,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            CheckPlayerBlocked(); // ✅ Check if the player don't have more movements available
+            CheckPlayerBlocked(); // Check if the player don't have more movements available
         }
     }
 
@@ -103,7 +114,7 @@ public class GameManager : MonoBehaviour
         bool player1HasMoves = false;
         bool player2HasMoves = false;
 
-        Piece[,] board = BoardManager.Instance.board; // 🔄 Access to the board array from the BoardManager
+        Piece[,] board = BoardManager.Instance.board; // Access to the board array from the BoardManager
 
         foreach (Piece piece in FindObjectsByType<Piece>(FindObjectsInactive.Include, FindObjectsSortMode.None))
         {

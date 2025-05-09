@@ -1043,7 +1043,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 5.450012, y: -87}
+  m_AnchoredPosition: {x: 5.4501953, y: -87}
   m_SizeDelta: {x: -595.424, y: -369.961}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1270687790
@@ -1072,6 +1072,50 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &1476292628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1476292630}
+  - component: {fileID: 1476292629}
+  m_Layer: 0
+  m_Name: IAManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1476292629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476292628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc5cf269ccc0b1a419ece8d92f4d46b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1476292630
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476292628}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 385.54315, y: 225.19046, z: -1.1841186}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1491277437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1734,6 +1778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae830d0866182424681983233639a68d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentGameMode: 1
   winPanel: {fileID: 68683248}
   winText: {fileID: 195923930}
   currentPlayer: {fileID: 1760281207}
@@ -2034,3 +2079,4 @@ SceneRoots:
   - {fileID: 759286517}
   - {fileID: 1778974064}
   - {fileID: 1536114659}
+  - {fileID: 1476292630}

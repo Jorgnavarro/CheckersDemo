@@ -127,7 +127,7 @@ public class BoardManager : MonoBehaviour
 
         if (validMove)
         {
-            ClearHighlightedBoxes(); // 🔄 Clean motion images before updating the position
+            ClearHighlightedBoxes(); //Clean motion images before updating the position
             
             GameManager.Instance.CheckWinCondition(); //Check if anyone won
 
@@ -145,7 +145,7 @@ public class BoardManager : MonoBehaviour
             // End of turn
             _selectedPiece.GetComponent<SpriteRenderer>().color = _selectedPiece.isPlayer1 ? Color.black : Color.red;
             _selectedPiece = null;
-            GameManager.Instance.ChangeTurn(); // 🔄 Switch turn
+            GameManager.Instance.ChangeTurn(); //Switch turn
         }
 
     }
@@ -261,6 +261,28 @@ public class BoardManager : MonoBehaviour
         foreach (Box box in _blackSquares) // Just clean the black boxes
         {
             box.ShowMoveIndicator(false); // Deactivated the image indicator
+        }
+        
+    }
+
+    public void HandleAIMove(Piece aiPiece, Box targetBox)
+    {
+        bool captured;
+        bool validMove = aiPiece.MovePiece(targetBox.row, targetBox.col, board, out captured);
+
+        if (validMove)
+        {
+            ClearHighlightedBoxes();
+            GameManager.Instance.CheckWinCondition();
+
+            if (captured && aiPiece.HasAvailableCaptures(board))
+            {
+                Debug.Log("AI must continue capturing.");
+                AIManager.Instance.AIMove(); // If possible the AI continues capturing
+                return;
+            }
+
+            GameManager.Instance.ChangeTurn(); //Switch the turn
         }
         
     }

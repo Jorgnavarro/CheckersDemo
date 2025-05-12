@@ -15,6 +15,8 @@ public class BoardManager : MonoBehaviour
     public GameObject boxPrefab;
     private string _customColor1 = "#594F4F";
     private string _customColor2 = "#D6C7B1";
+    private string _customColor1Piece = "";
+    private string _customColor2Piece = "";
     private Box[,] _grid = new Box[8, 8];
     
 
@@ -146,6 +148,7 @@ public class BoardManager : MonoBehaviour
             _selectedPiece.GetComponent<SpriteRenderer>().color = _selectedPiece.isPlayer1 ? Color.black : Color.red;
             _selectedPiece = null;
             GameManager.Instance.ChangeTurn(); //Switch turn
+            
         }
 
     }
@@ -225,7 +228,7 @@ public class BoardManager : MonoBehaviour
 
         for (int i = 0; i < 12; i++)
         {
-            SpawnPiece(_blackSquares[topIndex], false, Color.red);
+            SpawnPiece(_blackSquares[topIndex], false, Color.white);
             topIndex++;
         }
     }
@@ -286,4 +289,16 @@ public class BoardManager : MonoBehaviour
         }
         
     }
+    
+    public Box GetBox(int row, int col)
+    {
+        if (row < 0 || row >= 8 || col < 0 || col >= 8)
+        {
+            return null; // Fuera de los límites del tablero
+        }
+    
+        return _grid[row, col]; // Retorna la casilla correspondiente
+    }
+
+
 }

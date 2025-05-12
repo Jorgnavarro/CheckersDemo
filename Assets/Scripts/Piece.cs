@@ -8,15 +8,34 @@ public class Piece : MonoBehaviour
     public bool isKing = false;
     public bool isPlayer1;
     public GameObject kingImage;
+    public string colorHex;
 
     
     //Initializes the piece with its position, player and color.
-    public void Initialize(int _row, int _col, bool _isPlayer1, Color color)
+    public void Initialize(int _row, int _col, bool _isPlayer1, string colorString)
     {
         row = _row;
         col = _col;
         isPlayer1 = _isPlayer1;
-        GetComponent<SpriteRenderer>().color = color;
+        colorHex = colorString;
+        
+        if (ColorUtility.TryParseHtmlString(colorHex, out Color parsedColor))
+        {
+            GetComponent<SpriteRenderer>().color = parsedColor;
+        }
+        else
+        {
+            Debug.LogError($"Error to parse color: {colorHex}");
+        }
+    }
+
+    public void SetColor(string newColor)
+    {
+        colorHex = newColor;
+        if (ColorUtility.TryParseHtmlString(colorHex, out Color parsedColor))
+        {
+            GetComponent<SpriteRenderer>().color = parsedColor;
+        }
     }
     
     //Checks if a move is valid, including normal and capturing moves.

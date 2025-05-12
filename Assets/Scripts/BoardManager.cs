@@ -15,8 +15,8 @@ public class BoardManager : MonoBehaviour
     public GameObject boxPrefab;
     private string _customColor1 = "#594F4F";
     private string _customColor2 = "#D6C7B1";
-    private string _customColor1Piece = "";
-    private string _customColor2Piece = "";
+    private string _customColorPlayer1Piece = "#000000";
+    private string _customColorPlayer2Piece = "#938D90";
     private Box[,] _grid = new Box[8, 8];
     
 
@@ -145,7 +145,7 @@ public class BoardManager : MonoBehaviour
            }
            
             // End of turn
-            _selectedPiece.GetComponent<SpriteRenderer>().color = _selectedPiece.isPlayer1 ? Color.black : Color.red;
+            _selectedPiece.SetColor(_selectedPiece.isPlayer1 ? _customColorPlayer1Piece : _customColorPlayer2Piece);
             _selectedPiece = null;
             GameManager.Instance.ChangeTurn(); //Switch turn
             
@@ -160,7 +160,7 @@ public class BoardManager : MonoBehaviour
 
         if (piece.HasAvailableCaptures(board))
         {
-            piece.GetComponent<SpriteRenderer>().color = piece.isPlayer1 ? Color.black : Color.red;
+            piece.SetColor(piece.isPlayer1 ? _customColorPlayer1Piece : _customColorPlayer2Piece);
             Debug.Log("Time out, automatic turn change.");
             _selectedPiece = null;
             GameManager.Instance.ChangeTurn();
@@ -187,11 +187,11 @@ public class BoardManager : MonoBehaviour
             if (_selectedPiece != null)
             {
                 ClearHighlightedBoxes();
-                _selectedPiece.GetComponent<SpriteRenderer>().color = _selectedPiece.isPlayer1 ? Color.black : Color.red;
+                _selectedPiece.SetColor(_selectedPiece.isPlayer1 ? _customColorPlayer1Piece : _customColorPlayer2Piece);
             }
 
             _selectedPiece = clickedPiece;
-            _selectedPiece.GetComponent<SpriteRenderer>().color = Color.yellow;
+            _selectedPiece.SetColor("#FFFF00");
             HighlightAvailableMoves(_selectedPiece);
         }
     }
@@ -222,23 +222,23 @@ public class BoardManager : MonoBehaviour
 
         for (int i = 0; i < 12; i++)
         {
-            SpawnPiece(_blackSquares[downIndex], true, Color.black);
+            SpawnPiece(_blackSquares[downIndex], true, _customColorPlayer1Piece);
             downIndex++;
         }
 
         for (int i = 0; i < 12; i++)
         {
-            SpawnPiece(_blackSquares[topIndex], false, Color.white);
+            SpawnPiece(_blackSquares[topIndex], false, _customColorPlayer2Piece);
             topIndex++;
         }
     }
 
     //Instance the pieces and configure their position on the grid, before placing them.
-    private void SpawnPiece(Box box, bool _isPlayer1, Color color)
+    private void SpawnPiece(Box box, bool _isPlayer1, string customColorPiece)
     {
         GameObject piece = Instantiate(piecePrefab, box.transform.position, Quaternion.identity, transform);
         Piece pieceScript = piece.GetComponent<Piece>();
-        pieceScript.Initialize(box.row, box.col, _isPlayer1, color);
+        pieceScript.Initialize(box.row, box.col, _isPlayer1, customColorPiece);
         board[box.row, box.col] = pieceScript;
     }
     
@@ -294,10 +294,10 @@ public class BoardManager : MonoBehaviour
     {
         if (row < 0 || row >= 8 || col < 0 || col >= 8)
         {
-            return null; // Fuera de los límites del tablero
+            return null; // Out of bounds of the board
         }
     
-        return _grid[row, col]; // Retorna la casilla correspondiente
+        return _grid[row, col]; // return the corresponding box
     }
 
 

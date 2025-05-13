@@ -25,7 +25,16 @@ public class BoardManager : MonoBehaviour
         Instance = this;
     }
 
+    /*
     private void Start()
+    {
+        GenerateBoard();
+        FindBlackSquares();
+        PlacePieces();
+    }
+    */
+
+    public void InitializeGame()
     {
         GenerateBoard();
         FindBlackSquares();
@@ -175,25 +184,57 @@ public class BoardManager : MonoBehaviour
     //Highlights your available moves.
     private void HandlePieceSelection(Piece clickedPiece)
     {
+        /*------------------------ Version for the Rule that block captures------------------------
+        // Check if exists another piece with better capture available
+        List<Piece> piecesWithCaptures = new List<Piece>();
 
-        if (_selectedPiece != null && _selectedPiece.HasAvailableCaptures(board))
+        foreach (Piece piece in FindObjectsByType<Piece>(FindObjectsInactive.Include, FindObjectsSortMode.None))
         {
+            if (piece.gameObject.activeSelf && piece.HasAvailableCaptures(board) &&
+                ((GameManager.Instance.GetCurrentTurn() && piece.isPlayer1) || (!GameManager.Instance.GetCurrentTurn() && !piece.isPlayer1)))
+            {
+                piecesWithCaptures.Add(piece);
+            }
+        }
+
+        // If there are captured pieces and the selected piece is not one of them, do not allow the change
+        if (piecesWithCaptures.Count > 0 && !piecesWithCaptures.Contains(clickedPiece))
+        {
+            Debug.Log("You must select a piece with an available capture.");
             return;
         }
+
+        // Clear previous selection
+        if (_selectedPiece != null)
+        {
+            ClearHighlightedBoxes();
+            _selectedPiece.SetColor(_selectedPiece.isPlayer1 ? _customColorPlayer1Piece : _customColorPlayer2Piece);
+        }
+
+        // Select new piece
+        _selectedPiece = clickedPiece;
+        _selectedPiece.SetColor("#FFFF00"); // Yellow selection
+        HighlightAvailableMoves(_selectedPiece);
+        */
         
-        //Check if the Piece belong to the Player in turn
+        //-----------------Version for free movements
+        // Check if the piece belongs to the current player
         if ((GameManager.Instance.GetCurrentTurn() && clickedPiece.isPlayer1) || (!GameManager.Instance.GetCurrentTurn() && !clickedPiece.isPlayer1))
         {
+            // Clear previous selection
             if (_selectedPiece != null)
             {
                 ClearHighlightedBoxes();
                 _selectedPiece.SetColor(_selectedPiece.isPlayer1 ? _customColorPlayer1Piece : _customColorPlayer2Piece);
             }
 
+            // Select new piece
             _selectedPiece = clickedPiece;
-            _selectedPiece.SetColor("#FFFF00");
+            _selectedPiece.SetColor("#FFFF00"); // Amarillo
             HighlightAvailableMoves(_selectedPiece);
         }
+        
+        
     }
     
 
@@ -278,13 +319,27 @@ public class BoardManager : MonoBehaviour
             ClearHighlightedBoxes();
             GameManager.Instance.CheckWinCondition();
 
+            /*
             if (captured && aiPiece.HasAvailableCaptures(board))
             {
                 Debug.Log("AI must continue capturing.");
                 AIManager.Instance.AIMove(); // If possible the AI continues capturing
                 return;
             }
+            */
+            
+            if (captured)
+            {
+                GameManager.Instance.AddScore(false); // Actualiza el puntaje de la IA
 
+                if (aiPiece.HasAvailableCaptures(board))
+                {
+                    Debug.Log("AI must continue capturing.");
+                    AIManager.Instance.AIMove(); // Si puede, la IA sigue capturando
+                    return;
+                }
+            }
+            
             GameManager.Instance.ChangeTurn(); //Switch the turn
         }
         

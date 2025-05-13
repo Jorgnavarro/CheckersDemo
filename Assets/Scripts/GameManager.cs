@@ -51,24 +51,40 @@ public class GameManager : MonoBehaviour
     {
         if (isPlayer1)
         {
-            _player1Score++;
+            _player1Score+=10;
         }
         else
         {
-            _player2Score++;
+            _player2Score+=10;
         }
         UpdateScoreUI();
     }
 
     private void UpdateTurnUI()
     {
-        currentPlayer.text = _isPlayer1Turn ? "Current turn: Player 1" : "Current turn: Player 2";
+        if (currentGameMode == GameMode.PlayerVsAI && !_isPlayer1Turn)
+        {
+            currentPlayer.text = "Current turn: Machine";
+        }
+        else
+        {
+            currentPlayer.text = _isPlayer1Turn ? "Current turn: Player 1" : "Current turn: Player 2";
+        }
     }
 
     private void UpdateScoreUI()
     {
-        player1ScoreText.text = "Player 1: " + _player1Score;
-        player2ScoreText.text = "Player 2: " + _player2Score;
+        player1ScoreText.text = "Score player 1: " + _player1Score;
+
+        if (currentGameMode == GameMode.PlayerVsAI)
+        {
+            player2ScoreText.text = "Score machine: " + _player2Score;   
+        }
+        else
+        { 
+            player2ScoreText.text = "Score player 2: " + _player2Score;   
+        }
+        
     }
 
     public bool GetCurrentTurn()
@@ -134,21 +150,45 @@ public class GameManager : MonoBehaviour
         // Check if the player is blocked
         if (!player1HasMoves)
         {
-            Debug.Log("Player 2 wins! (Player 1 is blocked)");
-            ShowWinMessage("Player 2 wins!");
+            if (currentGameMode == GameMode.PlayerVsAI)
+            {
+                Debug.Log("Machine wins! (Player 1 is blocked)");
+                ShowWinMessage("Machine wins!");
+            }
+            else
+            {
+                Debug.Log("Player 2 wins! (Player 1 is blocked)");
+                ShowWinMessage("Player 2 wins!");
+            }
         }
         else if (!player2HasMoves)
         {
-            Debug.Log("Player 1 wins! (Player 2 is blocked)");
-            ShowWinMessage("Player 1 wins!");
+            if (currentGameMode == GameMode.PlayerVsAI)
+            {
+                Debug.Log("Player 1 wins! (Machine is blocked)");
+                ShowWinMessage("Player 1 wins!");
+            }
+            else
+            {
+                Debug.Log("Player 1 wins! (Player 2 is blocked)");
+                ShowWinMessage("Player 1 wins!");
+            }
         }
         
     }
 
-    private void ShowWinMessage(string playerWins)
+    private void ShowWinMessage(string winner)
     {
-       winText.text = playerWins;
-       winPanel.SetActive(true);
+
+        if (currentGameMode == GameMode.PlayerVsAI)
+        {
+            if (winner.Contains("Player 2"))
+            {
+                winner = "Machine wins, good luck for next!";
+            }
+        }
+        winText.text = winner;
+        winPanel.SetActive(true);
     }
 
     public void RestartGame()

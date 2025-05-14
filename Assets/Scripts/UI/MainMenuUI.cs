@@ -34,6 +34,7 @@ public class MainMenuUI : MonoBehaviour
     {
         gameManager.currentGameMode = (GameMode)index;
         Debug.Log("Game mode selected: " + gameManager.currentGameMode);
+        gameManager.UpdateScoreUI();
     }
     
     private void SetBackgroundVolume(float volume)

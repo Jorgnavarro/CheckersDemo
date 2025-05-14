@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void UpdateScoreUI()
+    public void UpdateScoreUI()
     {
         player1ScoreText.text = "Score player 1: " + _player1Score;
 

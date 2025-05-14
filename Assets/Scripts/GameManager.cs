@@ -27,7 +27,14 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Start()
@@ -57,6 +64,7 @@ public class GameManager : MonoBehaviour
         {
             _player2Score+=10;
         }
+        AudioManager.Instance.PlayCaptureSound();
         UpdateScoreUI();
     }
 

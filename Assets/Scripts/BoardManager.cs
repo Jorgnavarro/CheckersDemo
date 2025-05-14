@@ -22,7 +22,14 @@ public class BoardManager : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     /*
@@ -151,6 +158,10 @@ public class BoardManager : MonoBehaviour
                    StartCoroutine(WaitAndEndTurn(_selectedPiece, 3f));
                    return;
                }
+           }
+           else
+           {
+               AudioManager.Instance.PlayMoveSound();
            }
            
             // End of turn
@@ -338,6 +349,10 @@ public class BoardManager : MonoBehaviour
                     AIManager.Instance.AIMove(); // Si puede, la IA sigue capturando
                     return;
                 }
+            }
+            else
+            {
+                AudioManager.Instance.PlayMoveSound();
             }
             
             GameManager.Instance.ChangeTurn(); //Switch the turn

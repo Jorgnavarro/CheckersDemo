@@ -9,6 +9,8 @@ public class Piece : MonoBehaviour
     public bool isPlayer1;
     public GameObject kingImage;
     public string colorHex;
+    [SerializeField] private GameObject smokeEffectPrefab;
+
 
     
     //Initializes the piece with its position, player and color.
@@ -117,6 +119,9 @@ public class Piece : MonoBehaviour
         if (captured != null)
         {
             board[captured.row, captured.col] = null;
+            
+            GameObject smokeEffect = Instantiate(smokeEffectPrefab, captured.transform.position, Quaternion.identity);
+            Destroy(smokeEffect, 2f);
             captured.gameObject.SetActive(false);
             Debug.Log("Captured enemy piece!");
         }

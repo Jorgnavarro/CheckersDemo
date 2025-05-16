@@ -318,3 +318,5 @@ MonoBehaviour:
   isKing: 0
   isPlayer1: 0
   kingImage: {fileID: 3769599819990980474}
+  colorHex: 
+  smokeEffectPrefab: {fileID: 5875524224521258581, guid: d21e03fd406837145a373ee85ef29564, type: 3}

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dd92d6c89cb9eb345a119731d2d29bf1
+guid: cc55f21e78b950040b28255c91dc75d5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9181521005186477584
-    second: ClassicBoardBg_0
+      213: 1625043983665115602
+    second: pause-button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ClassicBoardBg_0
+      name: pause-button_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 300
-        height: 300
+        x: 6
+        y: 6
+        width: 500
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01e6deb55b05b6f70800000000000000
-      internalID: 9181521005186477584
+      spriteID: 2d1bebea4e05d8610800000000000000
+      internalID: 1625043983665115602
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ClassicBoardBg_0: 9181521005186477584
+      pause-button_0: 1625043983665115602
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

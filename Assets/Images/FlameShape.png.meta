@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dd92d6c89cb9eb345a119731d2d29bf1
+guid: 210b0138d7658b14fa1dd4a0edd3a962
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9181521005186477584
-    second: ClassicBoardBg_0
+      213: 262708077640534625
+    second: FlameShape_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ClassicBoardBg_0
+      name: FlameShape_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 300
-        height: 300
+        x: 94
+        y: 109
+        width: 771
+        height: 1095
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01e6deb55b05b6f70800000000000000
-      internalID: 9181521005186477584
+      spriteID: 16ac36fca9355a300800000000000000
+      internalID: 262708077640534625
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ClassicBoardBg_0: 9181521005186477584
+      FlameShape_0: 262708077640534625
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -5,13 +5,1144 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53681baa-ac1b-4935-82b9-caee084c4ebf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BoardManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BoardManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Box.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Box.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Piece.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Piece.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CheckersDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CheckersDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Piece.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Piece.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CheckersDemo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CheckersDemo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BoardManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BoardManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Prefabs/Piece.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Prefabs/Piece.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimBox.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimBox.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimPiece.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimPiece.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Button Blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Button Blue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Button Green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Button Green.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Button Orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Button Orange.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Button Pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Button Pink.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Button Purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Button Purple.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Button Red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Button Red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Button Violet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Button Violet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Button Yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Button Yellow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Buttons.afdesign" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Buttons.afdesign.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/80x80 Background.afdesign" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/80x80 Background.afdesign.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/80x80 Background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/80x80 Background.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Background.afdesign" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Background.afdesign.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Background.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Input Field Background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Input Field Background.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Menu Background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Menu Background.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Small Square Button Blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Small Square Button Blue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Small Square Button Green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Small Square Button Green.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Small Square Button Orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Small Square Button Orange.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Small Square Button Pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Small Square Button Pink.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Small Square Button Purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Small Square Button Purple.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Small Square Button Red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Small Square Button Red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Small Square Button Violet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Small Square Button Violet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Small Square Button Yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Small Square Button Yellow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Small Square Button.afdesign" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Buttons/Misc/Small Square Button.afdesign.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Badge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Badge.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Bag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Bag.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Battery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Battery.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Bomb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Bomb.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Book.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Book.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Box.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Box.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Cash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Cash.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Check.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Clock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Clock.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Close.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Coin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Coin.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Crown 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Crown 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Crown 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Crown 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Dark Coins.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Dark Coins.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Dark Gem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Dark Gem.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Dice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Dice.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Down.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Energy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Energy.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Film.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Film.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Gem 1 Blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Gem 1 Blue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Gem 1 Green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Gem 1 Green.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Gem 1 Purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Gem 1 Purple.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Gem 2 Blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Gem 2 Blue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Gem 2 Purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Gem 2 Purple.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Gem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Gem.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Gift.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Gift.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Goal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Goal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Gold Key.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Gold Key.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Gold Lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Gold Lock.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Hammer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Hammer.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Heart Dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Heart Dark.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Heart.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Hour Glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Hour Glass.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Ice Cream.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Ice Cream.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Icon.afdesign" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Icon.afdesign.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Left.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Lock 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Lock 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Magnet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Magnet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Magnifying Glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Magnifying Glass.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Mail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Mail.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Map.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Medal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Medal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Messages.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Messages.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Pencil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Pencil.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Potion Green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Potion Green.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Potion Red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Potion Red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Potion Violet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Potion Violet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Rank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Rank.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Return.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Return.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Right.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Sack Of Coin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Sack Of Coin.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Settings.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Shield.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Shield.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Silver Key.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Silver Key.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Silver Lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Silver Lock.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Skull.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Skull.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Sound.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Sound.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Stack Coin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Stack Coin.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Star Dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Star Dark.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Star.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Stop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Stop.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Store 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Store 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Store 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Store 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Sword.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Ticket.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Ticket.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Timer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Timer.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Touch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Touch.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Trash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Trash.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Trophy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Trophy.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/Up.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/apple green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/apple green.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/apple red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/apple red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/axe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/axe.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/camera.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/camera.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/leaf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/leaf.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/map pointer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/map pointer.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/meat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/meat.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/notepad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/notepad.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/orange.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/pot of gold.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/pot of gold.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/shield blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/shield blue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/shield green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/shield green.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/target.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/target.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/water melon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Colored Icons/water melon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Documentation..pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Documentation..pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/GemsAndCoins.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/GemsAndCoins/Coin Chest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/GemsAndCoins/Coin Chest.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/GemsAndCoins/Coin Sack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/GemsAndCoins/Coin Sack.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/GemsAndCoins/Coin Stack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/GemsAndCoins/Coin Stack.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/GemsAndCoins/Gem Chest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/GemsAndCoins/Gem Chest.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/GemsAndCoins/Gem Sack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/GemsAndCoins/Gem Sack.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/GemsAndCoins/Gem Stack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/GemsAndCoins/Gem Stack.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panel Blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panel Blue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panel Green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panel Green.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panel Orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panel Orange.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panel Pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panel Pink.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panel Purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panel Purple.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panel Red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panel Red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panel Violet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panel Violet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panel Yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panel Yellow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panels Style 2 Blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panels Style 2 Blue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panels Style 2 Green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panels Style 2 Green.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panels Style 2 Orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panels Style 2 Orange.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panels Style 2 Pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panels Style 2 Pink.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panels Style 2 Purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panels Style 2 Purple.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panels Style 2 Red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panels Style 2 Red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panels Style 2 Violet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panels Style 2 Violet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panels Style 2 Yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Dark Panels Style 2 Yellow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Panels.afdesign" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/Panels.afdesign.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Blue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Green.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Orange.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Pink.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Purple.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Style 2 Green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Style 2 Green.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Style 2 Orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Style 2 Orange.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Style 2 Pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Style 2 Pink.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Style 2 Red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Style 2 Red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Style 2 Violet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Style 2 Violet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Style 2 Yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Style 2 Yellow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Style 2 blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Style 2 blue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Style 2 purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Style 2 purple.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Violet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Violet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Panels/White Panel Yellow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Bottom Menu.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Bottom Menu.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Login.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Login.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Lose.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Lose.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Message.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Message.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Progress Bar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Progress Bar/Progress Bar Blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Progress Bar/Progress Bar Blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Progress Bar/Progress Bar Green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Progress Bar/Progress Bar Green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Progress Bar/Progress Bar Lavender.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Progress Bar/Progress Bar Lavender.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Progress Bar/Progress Bar Orange.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Progress Bar/Progress Bar Orange.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Progress Bar/Progress Bar Pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Progress Bar/Progress Bar Pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Progress Bar/Progress Bar Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Progress Bar/Progress Bar Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Progress Bar/Progress Bar Violet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Progress Bar/Progress Bar Violet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Progress Bar/Progress Bar Yellow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Progress Bar/Progress Bar Yellow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Settings.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Settings.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Slider/Slider Green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Slider/Slider Green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Slider/Slider Lavender.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Slider/Slider Lavender.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Slider/Slider Orange.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Slider/Slider Orange.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Slider/Slider Pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Slider/Slider Pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Slider/Slider Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Slider/Slider Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Slider/Slider Violet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Slider/Slider Violet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Slider/Slider Yellow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Slider/Slider Yellow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Status.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Status.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Store.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Store.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Toggles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Toggles/Toggle Blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Toggles/Toggle Blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Toggles/Toggle Green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Toggles/Toggle Green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Toggles/Toggle Lavender.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Toggles/Toggle Lavender.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Toggles/Toggle Orange.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Toggles/Toggle Orange.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Toggles/Toggle Pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Toggles/Toggle Pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Toggles/Toggle Red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Toggles/Toggle Red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Toggles/Toggle Violet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Toggles/Toggle Violet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Toggles/Toggle Yellow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Toggles/Toggle Yellow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Win.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Prefab/Win.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar BG.afdesign" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar BG.afdesign.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar Background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar Background.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar Blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar Blue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar Green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar Green.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar Orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar Orange.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar Pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar Pink.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar Purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar Purple.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar Red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar Red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar Violet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar Violet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar Yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar Yellow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar.afdesign" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Progress Bars/Progress Bar.afdesign.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Scenes/Violet UI.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Scenes/Violet UI.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch Off Background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch Off Background.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch On Blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch On Blue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch On Green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch On Green.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch On Orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch On Orange.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch On Pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch On Pink.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch On Purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch On Purple.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch On Red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch On Red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch On Violet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch On Violet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch On Yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch On Yellow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch.afdesign" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Switch/Switch.afdesign.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Background.afdesign" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Background.afdesign.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Background.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Fill Blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Fill Blue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Fill Green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Fill Green.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Fill Orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Fill Orange.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Fill Pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Fill Pink.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Fill Purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Fill Purple.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Fill Red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Fill Red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Fill Violet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Fill Violet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Fill Yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Fill Yellow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Fill.afdesign" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/Toggles/Toggle Fill.afdesign.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/PowerUp1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/PowerUp1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White A1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White A1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Acorn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Acorn.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Add.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White AddFriend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White AddFriend.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Airplane.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Airplane.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Alarm 2 off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Alarm 2 off.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Alarm 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Alarm 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Alarm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Alarm.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Alert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Alert.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Anchor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Anchor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Anvil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Anvil.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Apple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Apple.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Armor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Armor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Arrow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White At.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White At.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Axe 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Axe 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Axe 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Axe 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Axe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Axe.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Backward 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Backward 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Backward.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Backward.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bag 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bag 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bag 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bag 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Banner.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Basket.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Basket.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Battery Empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Battery Empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Battery Full.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Battery Full.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Battery Half.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Battery Half.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Battery Storage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Battery Storage.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bishop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bishop.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bitcoin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bitcoin.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Blade 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Blade 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Blade 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Blade 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Blade 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Blade 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bluetooth Off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bluetooth Off.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bluetooth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bluetooth.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bomb 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bomb 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bomb 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bomb 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bomb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bomb.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Book 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Book 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Books.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Books.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Boots 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Boots 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Boxing Glove 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Boxing Glove 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bug 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bug 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Bug.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Building 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Building 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Building.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Building.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Calculator.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Calculator.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Calendar 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Calendar 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Calendar 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Calendar 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Calendar 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Calendar 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Camera 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Camera 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Camera.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Camera.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Cart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Cart.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Cash Bag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Cash Bag.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Castle 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Castle 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Castle 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Castle 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Cauldron.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Cauldron.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Chat 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Chat 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Chat 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Chat 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Chat 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Chat 4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Chat.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Check.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Chest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Chest.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Choices.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Choices.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Click.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Click.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Clip 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Clip 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Clip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Clip.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Clock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Clock.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Close 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Close 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Close.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Cloud 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Cloud 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Cloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Cloud.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Clover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Clover.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Compass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Compass.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Compress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Compress.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Connected Symbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Connected Symbol.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Controls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Controls.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Cross Arows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Cross Arows.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Cross Swords.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Cross Swords.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Cross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Cross.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Crown 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Crown 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Crown 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Crown 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Cycle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Cycle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Device Vibration.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Device Vibration.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Dice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Dice.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Disc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Disc.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Dollar Sign.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Dollar Sign.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Dollar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Dollar.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Down.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White DropDown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White DropDown.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Energy 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Energy 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Energy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Energy.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Euro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Euro.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Expand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Expand.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Explosion 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Explosion 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Explosion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Explosion.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White FB Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White FB Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Fan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Fan.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Fast Rewind.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Fast Rewind.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White FastFordward.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White FastFordward.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Feather.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Feather.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Female.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Female.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Files.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Files.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Find.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Find.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Fire.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Fire.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Fish 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Fish 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Fish 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Fish 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Flag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Flag.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Flow Sysmbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Flow Sysmbol.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Folder 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Folder 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Folder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Folder.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Forward 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Forward 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Forward.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Forward.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Friends.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Friends.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Gasoline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Gasoline.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Gear 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Gear 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Gear 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Gear 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Gem 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Gem 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Gem 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Gem 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Gift.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Gift.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Globe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Globe.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Google.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Google.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Graduation Cap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Graduation Cap.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Grenade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Grenade.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Gun 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Gun 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Gun.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Gun.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Hamer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Hamer.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Hammer 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Hammer 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Headphones.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Headphones.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Heart 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Heart 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Heart 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Heart 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Heart 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Heart 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Heart Arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Heart Arrow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Helmet 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Helmet 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Helmet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Helmet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Home 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Home 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Home 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Home 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Home.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Horse Shoe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Horse Shoe.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Hour Glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Hour Glass.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White ID.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White ID.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Infinite Symbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Infinite Symbol.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Info 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Info 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Information.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Information.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Japanese Yen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Japanese Yen.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Key.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Key.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Knight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Knight.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Layers Round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Layers Round.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Leaf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Leaf.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Left.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Level 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Level 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Level 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Level 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Light.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Link.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Link.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Location 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Location 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Location 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Location 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Lock.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Mace.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Mace.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Magnet 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Magnet 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Magnet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Magnet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Male.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Male.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Map.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Mask.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Media Folder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Media Folder.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Menu 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Menu 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Menu 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Menu 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Menu 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Menu 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Message 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Message 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Message.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Message.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Minus 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Minus 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Minus.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Misc 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Misc 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Monitor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Monitor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Moon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Moon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Mountains.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Mountains.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Move Down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Move Down.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Move Left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Move Left.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Move LeftRight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Move LeftRight.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Move Right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Move Right.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Move Up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Move Up.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Move UpDown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Move UpDown.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Music Note.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Music Note.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Music Off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Music Off.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Music.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White News.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White News.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Number Sign.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Number Sign.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Open File.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Open File.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Paint.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Paint.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Party Pop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Party Pop.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pause.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pawn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pawn.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Paws.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Paws.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pen 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pen 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pen 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pen 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pen.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Percent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Percent.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Person 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Person 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Person.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Person.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Phone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Phone.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Picture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Picture.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pie Chart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pie Chart.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Piggy Bank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Piggy Bank.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pilar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pilar.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pin.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pinterest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pinterest.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Plane.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Plane.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Planet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Planet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Play.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Playstore.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Playstore.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Plug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Plug.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Plus 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Plus 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Plus.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pole.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pole.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pop Corn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pop Corn.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Potion 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Potion 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Potion 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Potion 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pouch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pouch.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pound Sign.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pound Sign.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pound.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pound.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Power Button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Power Button.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Power Up 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Power Up 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Print.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Print.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pumpkin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Pumpkin.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Puzzle Piece.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Puzzle Piece.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Queen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Queen.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Questions 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Questions 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Questions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Questions.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Quiver.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Quiver.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Rank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Rank.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Ranking.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Ranking.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Return 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Return 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Return.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Return.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Ribbon 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Ribbon 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Ribbon 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Ribbon 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Ribbon 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Ribbon 4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Ribbon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Ribbon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Right.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Rocket.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Rocket.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Rubble.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Rubble.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sad 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sad 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sad 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sad 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sad 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sad 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Scissor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Scissor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White ScrewDriver.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White ScrewDriver.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Scroll.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Scroll.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Select 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Select 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Select 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Select 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Select.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Select.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Shield 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Shield 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Shield 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Shield 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Shop 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Shop 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Signal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Signal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Site Off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Site Off.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Site On.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Site On.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Skull 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Skull 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Skull.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Skull.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Skype.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Skype.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sleep.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sleep.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Slider 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Slider 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Slider 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Slider 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Smiley Happy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Smiley Happy.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Smiley.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Smiley.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Snow Globe 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Snow Globe 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Snow Globe 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Snow Globe 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Snow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Snow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sound 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sound 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sound Icom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sound Icom.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sound Off 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sound Off 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sound Off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sound Off.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sound On.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sound On.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Speed Boost 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Speed Boost 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Speed Boost.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Speed Boost.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Speed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Speed.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Star Hollow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Star Hollow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Star.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Stop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Stop.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Store.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Store.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Strength Up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Strength Up.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Subtract.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Subtract.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sun.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sun.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Swords.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Swords.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 10.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 11.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 12.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 13.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 14.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 15.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 16.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 17.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 18.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 19.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 20.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 21.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 6.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 7.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 8.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Symbol 9.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sysmbol 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Sysmbol 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Tag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Tag.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Target 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Target 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Target 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Target 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Telecom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Telecom.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Television.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Television.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Thumb Down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Thumb Down.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White ThumbUp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White ThumbUp.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Ticket 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Ticket 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Ticket 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Ticket 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Time.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Time.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Timer 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Timer 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Timer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Timer.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Tornado.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Tornado.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Trash Can.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Trash Can.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Tree.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Trophy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Trophy.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Twitter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Twitter.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Unlock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Unlock.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Up.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Video.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Video.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Voice Off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Voice Off.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Voice On.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Voice On.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Wand 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Wand 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Wand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Wand.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Warning 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Warning 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Warning.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Water Droplet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Water Droplet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Web.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Weight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Weight.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Wheel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Wheel.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Wifi Off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Wifi Off.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Wifi On.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Wifi On.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Wind.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Wind.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Witch Hat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Witch Hat.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Wrench.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Wrench.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White YingYang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White YingYang.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Youtube.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Youtube.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Zoom In.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Zoom In.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Zoom Out.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Violet Theme Ui/White Icons/White Zoom Out.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +1154,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BoardManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Piece.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/BackgroundMover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Unlit-Default.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Cube Rotate Demo/Assets/Scripts/CubeRotation.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -111,6 +1243,10 @@
       <workItem from="1746709622161" duration="19979000" />
       <workItem from="1746762058873" duration="3491000" />
       <workItem from="1747078633624" duration="4012000" />
+      <workItem from="1747227973564" duration="7817000" />
+      <workItem from="1747316941733" duration="4985000" />
+      <workItem from="1747349340543" duration="3315000" />
+      <workItem from="1747402144873" duration="3445000" />
     </task>
     <servers />
   </component>

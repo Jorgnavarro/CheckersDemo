@@ -1,10 +1,17 @@
 fileFormatVersion: 2
-guid: dd92d6c89cb9eb345a119731d2d29bf1
+guid: 25b8e83b0b204f54595f1e934897503a
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235559
+  packageName: Violet Themed UI
+  packageVersion: 1.1
+  assetPath: Assets/Images/White Panel Orange.png
+  uploadId: 700144
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9181521005186477584
-    second: ClassicBoardBg_0
+      213: -6593321763459853649
+    second: White Panel Orange_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +120,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ClassicBoardBg_0
+      name: White Panel Orange_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 300
-        height: 300
+        width: 1212
+        height: 1115
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +135,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01e6deb55b05b6f70800000000000000
-      internalID: 9181521005186477584
+      spriteID: fa29f1ff9c0df74a0800000000000000
+      internalID: -6593321763459853649
       vertices: []
       indices: 
       edges: []
@@ -148,7 +155,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ClassicBoardBg_0: 9181521005186477584
+      White Panel Orange_0: -6593321763459853649
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
